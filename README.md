@@ -1,4 +1,4 @@
-inputex-gem [![Build Status](https://travis-ci.org/clicrdv/inputex-gem.png)](https://travis-ci.org/clicrdv/inputex-gem) [![Gem Version](https://badge.fury.io/rb/inputex.png)](http://badge.fury.io/rb/inputex)
+inputex-gem [![Build Status](https://travis-ci.org/clicrdv/inputex-gem.png)](https://travis-ci.org/clicrdv/inputex-gem) [![Gem Version](https://badge.fury.io/rb/inputex.png)](http://badge.fury.io/rb/inputex) [![Coverage Status](https://coveralls.io/repos/clicrdv/inputex-gem/badge.png)](https://coveralls.io/r/clicrdv/inputex-gem)
 ===========
 
 Interface the [inputex](https://github.com/neyric/inputex) UI library with ActiveRecord models to generate an [inputex](https://github.com/neyric/inputex) field definition.
