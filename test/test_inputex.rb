@@ -12,9 +12,9 @@ class TestModel < ActiveRecord::Base
 
 	belongs_to :toto
 
-	belongs_to :tata, { class_name: 'toto', foreign_key: "parent_id" }
+	belongs_to :tata, { :class_name =>'toto', :foreign_key =>"parent_id" }
 
-	validates :status, inclusion: { in: ["client", "test"] }
+	validates :status, :inclusion =>{ :in =>["client", "test"] }
 end	
 
 class TestInputex < Test::Unit::TestCase
@@ -24,7 +24,7 @@ class TestInputex < Test::Unit::TestCase
 		ActiveRecord::Base.connection.merge_column('test_models', :email, :string)
 		ActiveRecord::Base.connection.merge_column('test_models', :toto_id, :integer)
 		ActiveRecord::Base.connection.merge_column('test_models', :parent_id, :integer)
-		ActiveRecord::Base.connection.merge_column('test_models', :status, :string, { default: "test"})
+		ActiveRecord::Base.connection.merge_column('test_models', :status, :string, { :default =>"test"})
 	end
 
 	def test_id
