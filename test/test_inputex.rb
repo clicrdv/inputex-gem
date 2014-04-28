@@ -1,4 +1,10 @@
 require 'test/unit'
+
+if RUBY_VERSION >= "1.9.2"
+	require 'coveralls'
+	Coveralls.wear!
+end
+
 require 'inputex'
 require File.expand_path '../active_record/connection_adapters/fake_adapter.rb', __FILE__
 require 'active_record' 
