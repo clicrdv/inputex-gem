@@ -1,11 +1,9 @@
 require 'rake/testtask'
 
 Rake::TestTask.new do |t|
-  if RUBY_VERSION >= "1.9.2"
-     require 'coveralls'
-     Coveralls.wear!
-  end
-  t.libs << 'test'
+  t.libs << 'lib'
+  t.pattern = 'test/**/test_*.rb
+  t.verbose = true
 end
 
 desc "Run tests"
